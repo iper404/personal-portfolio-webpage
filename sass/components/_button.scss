@@ -35,6 +35,17 @@
         }
     }
 
+    &--blue{
+        background-color: $color-primary;
+        color: $color-white;
+        &::after{
+            background-color: $color-white;
+        }
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+    }
+
     &::after{
         content: "";
         display: inline-block;
